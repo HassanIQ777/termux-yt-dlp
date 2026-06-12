@@ -7,7 +7,7 @@ NEW_PATH="$HOME/bin/"
 SCRIPT_NAME="termux-url-opener"
 
 echo "Copying '$SCRIPT_NAME' to '$NEW_PATH'"
-if cp "$SCRIPT_NAME" "$NEW_PATH" -eq 0; then
+if cp "$SCRIPT_NAME" "$NEW_PATH"; then
     echo "Successfully installed $PROG_NAME!"
     echo "Note: if you make any updates or changes to '$SCRIPT_NAME', just rerun the install script!"
 else
