@@ -39,7 +39,7 @@ Clone the repository, then run the installer from inside the project directory:
 ```sh
 git clone https://github.com/HassanIQ777/termux-yt-dlp.git
 cd termux-yt-dlp
-chmod +x install.sh termux-url-opener
+chmod +x install.sh termux-url-opener update.sh
 mkdir -p "$HOME/bin"
 ./install.sh
 ```
