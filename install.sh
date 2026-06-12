@@ -12,5 +12,4 @@ if cp "$SCRIPT_NAME" "$NEW_PATH" -eq 0; then
     echo "Note: if you make any updates or changes to '$SCRIPT_NAME', just rerun the install script!"
 else
     echo "Failed to install $PROG_NAME"
-
 fi
