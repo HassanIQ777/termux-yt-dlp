@@ -52,6 +52,16 @@ If you edit `termux-url-opener`, rerun:
 ./install.sh
 ```
 
+## Updating
+To update this program to the latest version just run the updater script:
+
+```sh
+./updater.sh
+
+# Then again, give the scripts permission to run
+chmod +x install.sh termux-url-opener update.sh
+```
+
 ## Usage
 
 1. Open YouTube or another supported site.
@@ -67,16 +77,18 @@ If you edit `termux-url-opener`, rerun:
 5) Audio Only (Best MP3)
 ```
 
+5) is the default option, so if you hit Enter without choosing anything, the script will choose choice 5 anyways.
+
 Downloads are saved to:
 
 ```text
-/sdcard/YouTube
+/sdcard/YouTube/
 ```
 
 For playlists, files are saved to:
 
 ```text
-/sdcard/YouTube/<playlist title>
+/sdcard/YouTube/<playlist title>/<video title>
 ```
 
 Downloaded URLs are recorded in:
@@ -100,6 +112,8 @@ If `termux-toast` is missing, install Termux:API:
 ```sh
 pkg install termux-api
 ```
+
+or simply comment out `termux-url-opener line 55`
 
 For best compatibility, keep `yt-dlp` updated:
 
